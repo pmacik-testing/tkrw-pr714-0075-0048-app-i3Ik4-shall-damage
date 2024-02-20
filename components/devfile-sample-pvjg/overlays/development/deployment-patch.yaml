@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pvjg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0048-tenant/tkrw-pr714-0075-0048-app/devfile-sample-pvjg@sha256:274ce12f53dada785f78c8858785654e260695594883b257c094debd98aca36e
+        name: my-nodejs
+        resources: {}
+status: {}
